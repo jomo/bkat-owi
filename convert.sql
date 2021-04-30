@@ -20,6 +20,7 @@ SELECT
   kl1 AS Klassifizierung1,
   kl2 AS Klassifizierung2,
   kl3 AS Klassifizierung3,
+  kl4 AS Klassifizierung4,
   trim(tdr1 || char(10) || tdr2 || char(10) || tdr3 || char(10) || tdr4 || char(10) || tdr5, " " || char(10)) AS Tatbestand_Druckdatei,
   trim(pdr1 || " " || pdr2) AS Paragraphen_Druckdatei
 FROM bat;
