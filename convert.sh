@@ -14,6 +14,6 @@ echo 'tbnr^tdb1^tdb2^tdb3^tdb4^tdb5^pdb1^pdb2^fap^p^euro^cent^klt1^klt2^klt3^von
 rm data_unix.txt
 
 echo "Parsing and converting to CSV"
-cat convert.sql | sqlite3 -ascii -header -separator ^ -newline $'\n' db.sqlite3
+cat convert.sql | sqlite3 db.sqlite3
 
 echo -e "\nWrote data to data.csv!"
